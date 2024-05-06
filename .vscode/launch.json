@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "CUDA C++: Launch",
+        //     "type": "cuda-gdb",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/build/ab.out",
+        //     "stopAtEntry": false,
+        //     "cwd": "${fileDirname}",
+        //     // "args": ["${workspaceFolder}/uf50-01.cnf"],
+        //     "debuggerPath": "/usr/local/cuda-11.7/bin/cuda-gdb",
+        //     "preLaunchTask": "echo",
+        //     // "preLaunchTask": {
+        //     //     "task": "echo",
+        //     //     "type": "shell"
+        //     // }
+        // },
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/gpu11.out",
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            // "args": ["${workspaceFolder}/uf50-01.cnf"],
+            "debuggerPath": "/usr/local/cuda-11.7/bin/cuda-gdb",
+            // "preLaunchTask": "nvcc_build_1",
+            "preLaunchTask": "build",
+            // "preLaunchTask": {
+            //     "task": "echo",
+            //     "type": "shell"
+            // }
+        },
+        // {
+        //     "name": "CUDA C++: Launch",
+        //     "type": "cuda-gdb",
+        //     "request": "launch",
+        //     "program": ""
+        // }
+        // {
+        //     "name": "CUDA C++: Launch",
+        //     "type": "cuda-gdb",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/build/ab.out",
+            
+        // }
+    ]
+}   
